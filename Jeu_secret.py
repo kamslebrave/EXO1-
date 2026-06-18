@@ -1,6 +1,6 @@
 import random
 
-def jeu_devinette():
+def jeu_secret():
     # Choisir un nombre aléatoire entre 1 et 100
     nombre_secret = random.randint(1, 100)
     print("J'ai choisi un nombre entre 1 et 100. Essaie de le deviner !")
@@ -21,4 +21,4 @@ def jeu_devinette():
             print("Veuillez entrer un nombre valide.")
 
 # Lancer le jeu
-jeu_devinette()
+jeu_secret()
