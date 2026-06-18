@@ -1,8 +1,22 @@
-# Etape 1: Création du fichier 'Jeu_secret.py'
+# Comment merger les différentes branches
 
-- Sur VS Code, on va sur le dossier (GENAI) puis (EXO1-).
-  Sachant que le sous-dossier (EXO1-) a été cloné partant du lien github https://github.com/kamslebrave/EXO1-.git
+1. On met d'abord à jour le dépôt local
 
-# Etape 2: Explication opérationnelle du programme
+``bash
+git fetch origin
 
-Ce suit une logique selon laquelle l'utilisateur de déviner un nombre au hazard jusqu'à ce qu'il devra correspondre à celui que le système a pu générer aléatoirement.
+2. On se place sur main
+   git switch main (commande moderne) ou git checkout main (commande ancienne)
+
+3. On merge la 1ere branche
+   git merge branche1,
+
+puis on valide avec
+git add .
+git commit
+
+4. On merge la 2e branche2
+
+git merge branche2
+
+Même principe : résoudre les conflits si nécessaire, puis valider.
