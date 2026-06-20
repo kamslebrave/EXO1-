@@ -1,8 +1,16 @@
-# Etape 1: Création du fichier 'Jeu_secret.py'
+# Etape 5: Fusionner une branche dans la branche1 principale "main"
 
-- Sur VS Code, on va sur le dossier (GENAI) puis (EXO1-).
-  Sachant que le sous-dossier (EXO1-) a été cloné partant du lien github https://github.com/kamslebrave/EXO1-.git
+# Se placer sur la branche principale
 
-# Etape 2: Explication opérationnelle du programme
+``bash
+git switch main
 
-Ce suit une logique selon laquelle l'utilisateur de déviner un nombre au hazard jusqu'à ce qu'il devra correspondre à celui que le système a pu générer aléatoirement.
+ou encore
+
+git checkout main
+
+# Fusionner la branche1 et la branche2 dans main
+
+``bash
+git merge branche1
+git merge branche2
